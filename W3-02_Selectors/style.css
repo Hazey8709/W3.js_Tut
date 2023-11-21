@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 5px;
+}
+
+body {
+    background-color: #0005;
+    padding: 10px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/**   Title */
+h1 {
+    text-align: center;
+    border: 0.1rem solid black;
+    border-top: none;
+    border-radius: 2rem;
+    color: white;
+    text-shadow: 0 0 15px black;
+}
+
+ul {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/**  Sub-Titles  */
+h3 {
+    text-align: center;
+}
+
+/**  Selector Table  */
+table {
+    border: 0.2rem solid white;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: 0.1rem solid white;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.234);
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: green;
+}
+
+/**   Sections  (ALL) */
+section {
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+    /* width: ; */
+    /* height: 33rem; */
+    padding: 0.5rem;
+    margin-top: 2rem;
+}
+
+/**   Button To change Element    */
+button {
+    display: block;
+    border: 0.1rem solid black;
+    border-radius: 0.3rem;
+    background-color: white;
+    margin-top: 1rem;
+    /* margin-left: 6rem; */
+    margin-bottom: 2rem;
+    box-shadow: 0 0 3px black;
+}
+
+button:hover {
+    color: green;
+}
+
+/**   Details box    */
+.details {
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+    background-color: white;
+    margin-top: 1.5rem;
+    /* margin-bottom: 1.5rem; */
+}
+
+/*!   ------------   Reusable Code  ------------  */
+/**  Margin Top   */
+.marginTop {
+    margin-top: 2rem;
+}
+
+/**  UnderLine & Space  */
+.underLine {
+    /* text-decoration: underline; */
+    margin-top: 2rem;
+}
+
+/**  Span bold red  */
+span {
+    font-weight: bold;
+    color: red;
+}
+
+/**   Center  Text  */
+.center {
+    text-align: center;
+}
+
+/**   Next Category   */
+.sub {
+    margin-top: 8rem;
+}

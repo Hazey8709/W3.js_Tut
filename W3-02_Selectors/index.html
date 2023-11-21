@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta author="NoobieJ" name="Description" content="W3 Set-up/Intro" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+        <title>W3 Selectors</title>
+    </head>
+    <body>
+        <h1>W3 Selectors</h1>
+
+        <ul>
+            <li>Syntax: w3.action(selector)</li>
+            <li>The action() is performed on the selected element(s).</li>
+            <li>The (selector) selects the HTML element(s).</li>
+            <li>You can use CSS selectors to target elements.</li>
+            <li>( ) In red shows how the element can be targeted.</li>
+            <li>To see change click Show/ Hide /Refresh to change</li>
+            <li>We Use: W3.Hide(), W3.Show(), W3.ToggleShow()</li>
+        </ul>
+
+        <h1 class="underLine sub">Examples</h1>
+        <br />
+
+        <!--!   W3.Hide() Element  -->
+        <section>
+            <h3>W3.hide("P")</h3>
+
+            <button onclick="w3.hide('p')">Click to hide</button>
+            <button onclick="refreshButton()">Refresh Page</button>
+
+            <h4 id="sectTitle" class="center">
+                Learning W3.js<span>(H4, #sectTitle)</span>
+            </h4>
+
+            <p>W3.js is easy to learn and use.<span>(p)</span></p>
+            <p class="pElement">
+                These examples will show you how to use W3.<span
+                    >(P, .pElement)</span
+                >
+            </p>
+
+            <a href="Link">Link (Not-Active)<span>(Link)</span></a> <br />
+            <a href="Link2" target="_blank"
+                >Link (Not-Active)<span
+                    >(A,href=Link2, target "_blank" )</span
+                ></a
+            >
+
+            <div class="details">
+                W3.hide("p") will remove all P elements. The same can be done
+                using other html elements.
+            </div>
+        </section>
+
+        <!--!  W3.Hide(#sectTitle) #ID   -->
+        <section>
+            <h3>W3.hide("#sectTitle")</h3>
+
+            <button onclick="w3.hide('#sectTitle')">Click to hide</button>
+            <button onclick="refreshButton()">Refresh Page</button>
+
+            <h4 id="sectTitle" class="center">
+                Learning W3.js<span>(H4, #sectTitle)</span>
+            </h4>
+
+            <p>W3.js is easy to learn and use.<span>(p)</span></p>
+            <p class="pElement">
+                These examples will show you how to use W3.<span
+                    >(P, .pElement)</span
+                >
+            </p>
+
+            <a href="Link">Link (Not-Active)<span>(Link)</span></a> <br />
+            <a href="Link2" target="_blank"
+                >Link (Not-Active)<span
+                    >(A,href=Link2, target "_blank" )</span
+                ></a
+            >
+
+            <div class="details">
+                W3.hide("#sectTitle") will remove all Places that has an ID of
+                #sectTitle. To use a class instead change "#sectTitle" to
+                ".className"
+            </div>
+        </section>
+
+        <!--!  W3.Show(#sectTitle) Element   -->
+        <h1 class="sub">W3.show("selector")</h1>
+
+        <section>
+            <h3>W3.show("#sectTitle")</h3>
+
+            <button onclick="w3.show('#sectTitle')">Click to Show</button>
+            <button onclick="w3.hide('#sectTitle')">Click to hide</button>
+            <!-- <button onclick="refreshButton()">Refresh Page</button> -->
+
+            <h4 id="sectTitle" class="center">
+                Learning W3.js<span>(H4, #sectTitle)</span>
+            </h4>
+
+            <p>W3.js is easy to learn and use.<span>(p)</span></p>
+            <p class="pElement">
+                These examples will show you how to use W3.<span
+                    >(P, .pElement)</span
+                >
+            </p>
+
+            <a href="Link">Link (Not-Active)<span>(Link)</span></a> <br />
+            <a href="Link2" target="_blank"
+                >Link (Not-Active)<span
+                    >(A,href=Link2, target "_blank" )</span
+                ></a
+            >
+
+            <div class="details">
+                W3.show("#sectTitle") will show all Places that has an ID of
+                #sectTitle. To use a class instead change "#sectTitle" to
+                ".className".
+            </div>
+        </section>
+
+        <!--!  W3.Show("[href=Link]")  -->
+        <section>
+            <h3>W3.show("[href=Link]")</h3>
+
+            <button onclick='w3.show("[href=Link]")'>Click to Show</button>
+            <button onclick='w3.hide("[href=Link]")'>Click to hide</button>
+            <!-- <button onclick="refreshButton()">Refresh Page</button> -->
+
+            <h4 id="sectTitle" class="center">
+                Learning W3.js<span>(H4, #sectTitle)</span>
+            </h4>
+
+            <p>W3.js is easy to learn and use.<span>(p)</span></p>
+            <p class="pElement">
+                These examples will show you how to use W3.<span
+                    >(P, .pElement)</span
+                >
+            </p>
+
+            <a href="Link">Link (Not-Active)<span>(Link)</span></a> <br />
+            <a href="Link2" target="_blank"
+                >Link (Not-Active)<span
+                    >(A,href=Link2, target "_blank" )</span
+                ></a
+            >
+
+            <div class="details">
+                W3.show("#sectTitle") will show all Places that has an ID of
+                #sectTitle. To use a class instead change "#sectTitle" to
+                ".className".
+            </div>
+        </section>
+
+        <!--!  W3.toggleShow("selector")  -->
+        <h1 class="sub">W3.toggleShow("selector")</h1>
+        <section>
+            <h3>W3.toggleShow("[href]")</h3>
+
+            <button onclick='w3.toggleShow("[href]")'>Toggle</button>
+            <button onclick='w3.show("[href]")'>Click to Show</button>
+            <button onclick='w3.hide("[href]")'>Click to hide</button>
+            <!-- <button onclick="refreshButton()">Refresh Page</button> -->
+
+            <h4 id="sectTitle" class="center">
+                Learning W3.js<span>(H4, #sectTitle)</span>
+            </h4>
+
+            <p>W3.js is easy to learn and use.<span>(p)</span></p>
+            <p class="pElement">
+                These examples will show you how to use W3.<span
+                    >(P, .pElement)</span
+                >
+            </p>
+
+            <a href="Link">Link (Not-Active)<span>(Link)</span></a> <br />
+            <a href="Link2" target="_blank"
+                >Link (Not-Active)<span
+                    >(A,href=Link2, target "_blank" )</span
+                ></a
+            >
+
+            <div class="details">
+                W3.ToggleShow("[href]") ToggleShow() will toggle Show/Hide
+                elements by selector "[href]"".
+            </div>
+        </section>
+
+        <!--!  W3.toggleShow("selector")  -->
+        <section>
+            <h3>W3.toggleShow(".pElement")</h3>
+
+            <button onclick='w3.toggleShow(".pElement")'>Toggle</button>
+            <button onclick='w3.show(".pElement")'>Click to Show</button>
+            <button onclick='w3.hide(".pElement")'>Click to hide</button>
+            <!-- <button onclick="refreshButton()">Refresh Page</button> -->
+
+            <h4 id="sectTitle" class="center">
+                Learning W3.js<span>(H4, #sectTitle)</span>
+            </h4>
+
+            <p>W3.js is easy to learn and use.<span>(p)</span></p>
+            <p class="pElement">
+                These examples will show you how to use W3.<span
+                    >(P, .pElement)</span
+                >
+            </p>
+
+            <a href="Link">Link (Not-Active)<span>(Link)</span></a> <br />
+            <a href="Link2" target="_blank"
+                >Link (Not-Active)<span
+                    >(A,href=Link2, target "_blank" )</span
+                ></a
+            >
+
+            <div class="details">
+                W3.ToggleShow(".pElement") ToggleShow() will toggle Show/Hide
+                elements by selector ".pElement".
+            </div>
+        </section>
+
+        <!--!  -----------   Table    ---------------->
+        <table class="marginTop">
+            <tr>
+                <th>Selectors</th>
+                <th>Description</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>("*")</td>
+                <td>Selects all elements in the document.</td>
+                <td>
+                    <a
+                        href="https://www.w3schools.com/w3js/tryit.asp?filename=tryw3js_selectors_all"
+                        >Example</a
+                    >
+                </td>
+            </tr>
+
+            <tr>
+                <td>(this)</td>
+                <td>Selects the current HTML element.</td>
+                <td>
+                    <a
+                        href="https://www.w3schools.com/w3js/tryit.asp?filename=tryw3js_selectors_this"
+                        >Example</a
+                    >
+                </td>
+            </tr>
+
+            <tr>
+                <td>("p.intro")</td>
+                <td>Selects all (P) elements with class="intro".</td>
+                <td>
+                    <a
+                        href="https://www.w3schools.com/w3js/tryit.asp?filename=tryw3js_selectors_p_intro"
+                    >
+                        Example</a
+                    >
+                </td>
+            </tr>
+
+            <tr>
+                <td>("div p")</td>
+                <td>Selects all (P) element inside all (Div) elements.</td>
+                <td>
+                    <a
+                        href="https://www.w3schools.com/w3js/tryit.asp?filename=tryw3js_selectors_div_p"
+                    >
+                        Example</a
+                    >
+                </td>
+            </tr>
+
+            <tr>
+                <td>("div p:first-child")</td>
+                <td>
+                    Selects the first (P) element inside all (Div) elements.
+                </td>
+                <td>
+                    <a href="">Example</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>("[href]")</td>
+                <td>Selects all elements with an (href) attribute.</td>
+                <td>
+                    <a
+                        href="https://www.w3schools.com/w3js/tryit.asp?filename=tryw3js_selectors_href"
+                        >Example</a
+                    >
+                </td>
+            </tr>
+
+            <tr>
+                <td>("a[target=_blank]")</td>
+                <td>
+                    Selects all (a) elements with a target attribute value equal
+                    to "_blank".
+                </td>
+                <td>
+                    <a href="">Example</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>("p:nth-child(even)")</td>
+                <td>Selects all even (P) elements.</td>
+                <td>
+                    <a
+                        href="https://www.w3schools.com/w3js/tryit.asp?filename=tryw3js_selectors_even"
+                        >Example</a
+                    >
+                </td>
+            </tr>
+        </table>
+
+        <!--!  -----------   Reference    ---------------->
+        <div>
+            <h3>
+                Link for:
+                <a
+                    href="https://www.w3schools.com/cssref/css_selectors.php"
+                    target="_blank"
+                    >CSS Selectors</a
+                >
+            </h3>
+            <h3>
+                Selector's:
+                <a href="https://css-selectors.noobiej.tech/" target="_blank"
+                    >Visual Guide</a
+                >
+            </h3>
+        </div>
+        <script src="script.js" defer></script>
+    </body>
+</html>

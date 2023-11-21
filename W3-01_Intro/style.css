@@ -1,0 +1,22 @@
+/*!     Style  Page    - CSS - */
+
+* {
+    margin: 0;
+    padding: 5px;
+}
+
+body {
+    background-color: #0005;
+    padding: 10px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/**  Title  */
+body > h1,
+h3 {
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+}
