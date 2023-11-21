@@ -9,7 +9,7 @@
 [Reference / Docs:](https://www.w3schools.com/w3js/default.asp) <br/>
 
 **Use by cdn:** *(Put link in header)* <br />
-Link:  <script src="https://www.w3schools.com/lib/w3.js"></script>  <br />
+Link:  <script src="https://www.w3schools.com/lib/w3.js" ></script>  <br />
 
 **Use by Download:** <br />
 *Copy and past or use Link to download* <br />
