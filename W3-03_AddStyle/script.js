@@ -8,7 +8,7 @@ function addStyle() {
     w3.addStyle("#div-1", "color", "blue");
 
     //s Log:
-    // console.log('Clicked');
+    console.log('addStyle(): Clicked');
 }
 
 //s Define the callback removeStyle()
@@ -16,7 +16,7 @@ function removeStyle() {
     w3.addStyle("#div-1", "color", "black");
 
     //s Log:
-    // console.log('Clicked');
+    console.log('removeStyle(): Clicked');
 }
 
 //s Add the event listener to the button
