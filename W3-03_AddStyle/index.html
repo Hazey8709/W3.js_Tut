@@ -3,7 +3,153 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+        <link rel="stylesheet" href="style.css" />
+
+        <title>W3 Add Style</title>
     </head>
-    <body></body>
+    <body>
+        <h1>W3.addStyle(selector, "Property", "Value")</h1>
+
+        <p>Details:</p>
+        <p>Elements are shown in red <span>( )</span>.</p>
+
+        <!--!      By ID        -->
+        <div class="sect_Cont">
+            <h2>Add Style by Id:</h2>
+
+            <div id="div-1">
+                <span>(Div, #div-1)</span>
+                <h3>Div-1 Header <span>(H3)</span></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Numquam, sequi veniam deserunt delectus nostrum odit aperiam
+                    provident rerum harum quod animi fuga repudiandae, incidunt
+                    sunt asperiores minima. Mollitia, soluta incidunt.
+                    <span>(P)</span>
+                </p>
+            </div>
+            <div id="div-2">
+                <span>(Div, div-2)</span>
+                <p class="last-P">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repudiandae tempora blanditiis aspernatur quis recusandae,
+                    voluptas dolorum, rerum, dignissimos a alias cum fugiat!
+                    Exercitationem porro est harum labore, sunt reprehenderit
+                    possimus.
+                    <span>(P, .last-P)</span>
+                </p>
+            </div>
+
+            <button
+                onclick="w3.addStyle('#div-1', 'color', 'green ')"
+                id="d1_BtnAdd"
+            >
+                Add Style
+            </button>
+            <button
+                onclick="w3.addStyle('#div-1', 'color', 'black')"
+                id="d1_BtnRemove"
+            >
+                Remove Style
+            </button>
+
+            <div>
+                <p>Target: w3.addStyle('#div-1', 'color', 'green ')</p>
+            </div>
+        </div>
+
+        <!--!      By CLASS        -->
+        <div class="sect_Cont">
+            <h2>Add Style by Class:</h2>
+
+            <div id="div-1">
+                <span>(Div, #div-1)</span>
+                <h3>Div-1 Header <span>(H3)</span></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Numquam, sequi veniam deserunt delectus nostrum odit aperiam
+                    provident rerum harum quod animi fuga repudiandae, incidunt
+                    sunt asperiores minima. Mollitia, soluta incidunt.
+                    <span>(P)</span>
+                </p>
+            </div>
+            <div id="div-2">
+                <span>(Div, #div-2)</span>
+                <p class="last-P">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repudiandae tempora blanditiis aspernatur quis recusandae,
+                    voluptas dolorum, rerum, dignissimos a alias cum fugiat!
+                    Exercitationem porro est harum labore, sunt reprehenderit
+                    possimus. <span>(P, .last-P)</span>
+                </p>
+            </div>
+
+            <button
+                onclick="w3.addStyle('.last-P', 'background-color', '#0005')"
+                id="d1_BtnAdd"
+            >
+                Add Style
+            </button>
+            <button
+                onclick="w3.addStyle('.last-P', 'background-color', 'aliceblue')"
+                id="d1_BtnRemove"
+            >
+                Remove Style
+            </button>
+            <div>
+                <p>
+                    Target: w3.addStyle('.last-P', 'background-color', '#0005')
+                </p>
+            </div>
+        </div>
+
+        <!--!      By TAG NAME        -->
+        <div class="sect_Cont">
+            <h2>Add Style by Tag Name:</h2>
+
+            <div id="div-1">
+                <span>(Div, #div-1)</span>
+                <h3>Div-1 Header <span>(H3)</span></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Numquam, sequi veniam deserunt delectus nostrum odit aperiam
+                    provident rerum harum quod animi fuga repudiandae, incidunt
+                    sunt asperiores minima. Mollitia, soluta incidunt.
+                    <span>(P)</span>
+                </p>
+            </div>
+            <div id="div-2">
+                <span>(Div, #div-2)</span>
+                <p class="last-P">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repudiandae tempora blanditiis aspernatur quis recusandae,
+                    voluptas dolorum, rerum, dignissimos a alias cum fugiat!
+                    Exercitationem porro est harum labore, sunt reprehenderit
+                    possimus.
+                    <span>(P, .last-P)</span>
+                </p>
+            </div>
+
+            <button
+                onclick="w3.addStyle('p', 'font-weight', 'bold')"
+                id="d1_BtnAdd"
+            >
+                Add Style
+            </button>
+            <button
+                onclick="w3.addStyle('p', 'font-weight', 'normal')"
+                id="d1_BtnRemove"
+            >
+                Remove Style
+            </button>
+
+            <div>
+                <p>Target: w3.addStyle('p', 'font-weight', 'bold')</p>
+            </div>
+        </div>
+
+        <script src="script.js" defer></script>
+    </body>
 </html>
