@@ -8,6 +8,10 @@
 
 [Reference / Docs:](https://www.w3schools.com/w3js/default.asp) <br/>
 
+**NOTICE:** <br />
+*(If Link below is not working use the downlaod/copy paste method to use <br >
+file directly. I noticed sometimes there is an issue with the lnk route)*
+
 **Use by cdn:** *(Put link in header)* <br />
 Link:  <script src="https://www.w3schools.com/lib/w3.js" ></script>  <br />
 
